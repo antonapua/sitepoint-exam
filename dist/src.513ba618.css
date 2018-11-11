@@ -1,0 +1,56 @@
+body {
+  background: #2c2c2c;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 100px; }
+  body * {
+    box-sizing: border-box; }
+  body h1 {
+    font-size: 40px;
+    margin-top: 30px; }
+
+.sp-app {
+  background: #2c2c2c; }
+  .sp-app__action {
+    display: flex;
+    max-width: 50%;
+    margin: 0 auto; }
+    .sp-app__action-text {
+      width: 100%;
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 3px 0 0 3px; }
+    .sp-app__action-button {
+      min-width: 100px;
+      border: 0;
+      background: #ac4;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer; }
+  .sp-app__total {
+    color: #fff; }
+  .sp-app__item {
+    display: flex;
+    max-width: 50%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 3px;
+    align-items: center; }
+    .sp-app__item-button {
+      background: lightblue;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      font-size: 13px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer; }
+      .sp-app__item-button--close, .sp-app__item-button--minus {
+        background: #f79b9b; }
+    .sp-app__item-title, .sp-app__item-count {
+      padding: 0 20px; }
+    .sp-app__item-title {
+      flex: 1;
+      text-align: left; }
+    .sp-app__item > div:nth-of-type(n+3) {
+      margin-left: auto; }

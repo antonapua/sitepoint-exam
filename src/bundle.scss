@@ -1,0 +1,80 @@
+$red: #f79b9b;
+$blue: lightblue;
+$white: #fff;
+$black: #2c2c2c;
+$green: #ac4;
+
+body {
+  background: $black;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 100px;
+  *{
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+}
+
+
+.sp-app {
+  background: $black;
+  &__action{
+    display: flex;
+    max-width: 50%;
+    margin: 0 auto;
+    &-text{
+      width: 100%;
+      padding: 10px 20px;
+      border: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    &-button{
+      min-width: 100px;
+      border: 0;
+      background: $green;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+  }
+  &__total{
+    color: $white;
+  }
+  &__item {
+    display: flex;
+    max-width: 50%;
+    background: $white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 3px;
+    align-items: center;
+    &-button{
+      background: $blue;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      font-size: 13px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer;
+      &--close,&--minus{
+        background: $red;
+      }
+    }
+    &-title,&-count{
+      padding: 0 20px;
+    }
+    &-title{
+      flex: 1;
+      text-align: left;
+    }
+    > div{
+      &:nth-of-type(n+3){
+        margin-left: auto;
+      }
+    }
+  }
+}
